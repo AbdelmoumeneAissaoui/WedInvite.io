@@ -120,50 +120,58 @@
 
 
 #background-video {
-    height: 100vb;
-    width: 100vw;
-    object-fit: cover;
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    z-index: -1;
-    }
+        height: 100vb;
+        width: 100vw;
+        object-fit: cover;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        z-index: -1;
+        }
 #text {
-  height: 10%;
-  width: 100%;
-  font-size:10vw;
-  text-shadow: 2px 3px 1px rgb(255, 255, 255), 0 0 2em rgb(253, 253, 253), 0 0 2em rgb(255, 11, 11);
-  font-family:"kufi", 'kufi', 'kufi', 'kufi';
-  color: #5d0b0b;
-  -moz-box-shadow:none;  
-  -webkit-box-shadow: none;  
-  box-shadow:none;  
-  text-align:center;
-  display:block;
+        height: 10%;
+        width: 100%;
+        font-size:10vw;
+        text-shadow: 2px 3px 1px rgb(255, 255, 255), 0 0 2em rgb(253, 253, 253), 0 0 2em rgb(255, 11, 11);
+        font-family:"kufi", 'kufi', 'kufi', 'kufi';
+        color: #5d0b0b;
+        -moz-box-shadow:none;  
+        -webkit-box-shadow: none;  
+        box-shadow:none;  
+        text-align:center;
+        position: fixed;
+        top: 5%;
+
 
 }
 
-canvas {
-  display: flex;
-  position: relative;
-  background: transparent;
+.canvas {
+        bottom: 0;
+        margin-bottom: 1px;
+        margin-left: 10px;
+        align-self: center;
+        position: absolute;
+}
+
+.textcount {
+        position: absolute;
+        bottom: 0;
+        margin-left: 40%;
+        margin-bottom: 100px;
+        background-color: azure;
+
 }
 
 
-
-h1 {
-  position: relative;
-  color: white;
-  animation:focus-in-contract-bck 3s cubic-bezier(.25,.46,.45,.94) both;animation:focus-in-contract-bck 1s cubic-bezier(.25,.46,.45,.94) both
-
-}
-}
+/*
 footer {
-  background-color: aliceblue;
-  position: absolute;
+        position: absolute;
+        text-align: center;
+        align-self: auto;
+        bottom: 0;
+        width: 100%;
+        height: 8%;
 }
-
-
-    
+*/

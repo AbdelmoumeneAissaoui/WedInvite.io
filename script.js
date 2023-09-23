@@ -1,6 +1,6 @@
 var ringer = {
   //countdown_to: "10/31/2023",
-  countdown_to: "02/09/2024",
+  countdown_to: "02/17/2024",
   rings: {
     'DAYS': { 
       s: 86400000, // mseconds in a day,
@@ -37,7 +37,7 @@ var ringer = {
     $r = ringer;
 
     $r.cvs = document.createElement('canvas'); 
-    if (window.matchMedia("(min-width: 1000px)").matches) {
+    if (window.matchMedia("(min-width: 450px)").matches) {
       $r.r_spacing = $r.r_spacing
       $r.r_size = $r.r_size
       $r.r_thickness = $r.r_thickness
@@ -45,10 +45,10 @@ var ringer = {
       $r.r_font2 = $r.r_font2
     } else {
       $r.r_spacing = $r.r_spacing/2
-      $r.r_size = $r.r_size/2
+      $r.r_size = $r.r_size/1.64
       $r.r_thickness = $r.r_thickness/2
-      $r.r_font1 = $r.r_font1-2
-      $r.r_font2 = $r.r_font2-10
+      $r.r_font1 = $r.r_font1-5
+      $r.r_font2 = $r.r_font2-12
     }
     $r.size = { 
       w: ($r.r_size + $r.r_thickness) * $r.r_count + ($r.r_spacing*($r.r_count-1)), 
