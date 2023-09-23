@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+  }
+  
+  .btn {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    outline: none;
+    background: #f64747;
+    border: 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .btn::before {
+    content: "";
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50%;
+    background: #1f3a93;
+    transform: scale(0);
+    transform-origin: 83% 86%;
+    transition-property: transform;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+  }
+  
+  .btn.active::before {
+    transition-timing-function: ease;
+    transform: scale(1);
+  }
+  
+  .btn .play {
+    width: 65px;
+    height: 65px;
+    background: #fff;
+    margin-left: 15px;
+    z-index: 100;
+    clip-path: polygon(0 0, 80% 48%, 0 100%, 0% 100%);
+    transition: clip-path 0.5s ease;
+    transition-delay: 0.4s;
+  }
+  
+  .btn .play.active {
+    transition: clip-path 0.1s;
+    clip-path: polygon(0 0, 27% 0, 27% 100%, 0% 100%);
+  }
+  
+  .small-box {
+    width: 18px;
+    height: 15px;
+    background: #fff;
+    position: absolute;
+    left: 65px;
+    z-index: 100;
+    bottom: 59px;
+    opacity: 0;
+    transition: opacity 1s;
+  }
+  
+  .small-box.pauseToPlay {
+    animation: pauseToPlay 0.4s ease alternate-reverse;
+  }
+  
+  @keyframes pauseToPlay {
+    10% {
+      transform: rotate(90deg);
+      left: 73px;
+    }
+    20%,
+    40% {
+      transform: rotate(180deg);
+      left: 92px;
+    }
+    50% {
+      left: 92px;
+      height: 66px;
+      bottom: 57px;
+      transform: rotate(180deg);
+    }
+    100% {
+      left: 92px;
+      height: 66px;
+      bottom: 57px;
+      transform: rotate(180deg);
+    }
+  }
+  
+  .small-box.active {
+    opacity: 1;
+    transition: opacity 1s;
+    animation: move 0.8s cubic-bezier(0.52, 1.64, 0.37, 0.66) forwards;
+    animation-delay: 0.2s;
+  }
+  
+  @keyframes move {
+    10% {
+      transform: rotate(90deg);
+      left: 73px;
+    }
+    20%,
+    40% {
+      transform: rotate(180deg);
+      left: 92px;
+    }
+    50% {
+      left: 92px;
+      height: 66px;
+      bottom: 57px;
+      transform: rotate(180deg);
+    }
+    100% {
+      left: 92px;
+      height: 66px;
+      bottom: 57px;
+      transform: rotate(180deg);
+    }
+  }
+  

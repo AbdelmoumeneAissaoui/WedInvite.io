@@ -1,0 +1,24 @@
+@import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
+h1 {
+    position:relative;
+    top:5%;
+    right:50%;
+    font-family:'kufi';
+    font-size:35px;
+    color:#d143ca;
+    padding-top:0px;
+    padding-bottom:0px;
+    direction:rtl;
+}
+#BackG_V {
+    height: 100%;
+    width:100%;
+    top: 0%;
+    left: 0%;
+    position: relative;
+
+}
+
+body {
+    background-color: aqua;
+}
