@@ -44,9 +44,9 @@ var ringer = {
       $r.r_font1 = $r.r_font1
       $r.r_font2 = $r.r_font2
     } else {
-      $r.r_spacing = $r.r_spacing/2
-      $r.r_size = $r.r_size/1.64
-      $r.r_thickness = $r.r_thickness/2
+      $r.r_spacing = $r.r_spacing/2.1
+      $r.r_size = $r.r_size/1.74
+      $r.r_thickness = $r.r_thickness/2.1
       $r.r_font1 = $r.r_font1-5
       $r.r_font2 = $r.r_font2-12
     }

@@ -166,7 +166,7 @@
 
 
 footer {
-        position: absolute;
+        position: fixedx;
         text-align: center;
         align-self: auto;
         bottom: 0;
