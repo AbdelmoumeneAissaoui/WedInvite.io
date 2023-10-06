@@ -200,23 +200,3 @@ footer {
     width: 30px;
     height: 30px;
 }
-.meaning {
-    visibility: hidden;
-    position: absolute;
-    font-size: 16px;
-    max-width: 180px;
-    left: 30%;
-    bottom: 1%;
-    background: rgb(22, 121, 149);
-    padding: 5px;
-    border-radius: 10px;
-    opacity: 0;
-    transition: all 0.5s;
-}
-.quran-content .sign:hover .meaning {
-    visibility: visible;
-    opacity: 100%;
-    transition: all 0.5s;
-    text-align: center;
-
-}
