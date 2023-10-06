@@ -173,13 +173,16 @@ footer {
 
 .quran-container {
     position: absolute;
-    width: 70vw;
+    width: 80vw;
     font-family: Amiri;
-    font-size: 1rem;
+    font-size: 1.4rem;
     text-align: center;
     color: rgb(255, 255, 255);
    left: 50vw;
    transform: translate(-50%,20vh);
+   background-image: url(https://c0.wallpaperflare.com/preview/196/594/379/quran-book.jpg);
+   background-size: cover;
+   border-radius: 12%;
 
 }
 .name-of-god {
