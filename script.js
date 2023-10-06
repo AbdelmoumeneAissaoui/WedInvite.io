@@ -18,12 +18,13 @@ var ringer = {
       s: 1000,
       max: 60
     },
-    'MICROSEC': {
-      s: 10,
-      max: 100
-    }
+
+   // 'MICROSEC': {
+  //  s: 10,
+  //    max: 100
+  //  }
    },
-  r_count: 5,
+  r_count: 4,
   r_spacing: 18, // px
   r_size: 100, // px
   r_thickness: 12, // px
@@ -44,11 +45,11 @@ var ringer = {
       $r.r_font1 = $r.r_font1
       $r.r_font2 = $r.r_font2
     } else {
-      $r.r_spacing = $r.r_spacing/2.1
-      $r.r_size = $r.r_size/1.74
-      $r.r_thickness = $r.r_thickness/2.1
-      $r.r_font1 = $r.r_font1-5
-      $r.r_font2 = $r.r_font2-12
+      $r.r_spacing = $r.r_spacing/1.5
+      $r.r_size = $r.r_size/1.5
+      $r.r_thickness = $r.r_thickness/2
+      $r.r_font1 = $r.r_font1-2
+      $r.r_font2 = $r.r_font2-10
     }
     $r.size = { 
       w: ($r.r_size + $r.r_thickness) * $r.r_count + ($r.r_spacing*($r.r_count-1)), 

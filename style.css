@@ -114,6 +114,7 @@
 @-webkit-keyframes text-shadow-pop-br{0%{text-shadow:0 0 #555,0 0 #555,0 0 #555,0 0 #555,0 0 #555,0 0 #555,0 0 #555,0 0 #555;-webkit-transform:translateX(0) translateY(0);transform:translateX(0) translateY(0)}100%{text-shadow:1px 1px #555,2px 2px #555,3px 3px #555,4px 4px #555,5px 5px #555,6px 6px #555,7px 7px #555,8px 8px #555;-webkit-transform:translateX(-8px) translateY(-8px);transform:translateX(-8px) translateY(-8px)}}@keyframes text-shadow-pop-br{0%{text-shadow:0 0 #555,0 0 #555,0 0 #555,0 0 #555,0 0 #555,0 0 #555,0 0 #555,0 0 #555;-webkit-transform:translateX(0) translateY(0);transform:translateX(0) translateY(0)}100%{text-shadow:1px 1px #555,2px 2px #555,3px 3px #555,4px 4px #555,5px 5px #555,6px 6px #555,7px 7px #555,8px 8px #555;-webkit-transform:translateX(-8px) translateY(-8px);transform:translateX(-8px) translateY(-8px)}}
 
 @import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
+@import url('https://fonts.googleapis.com/css2?family=Amiri&display=swap');
 
 
 
@@ -147,31 +148,75 @@
 
 }
 
-.canvas {
+canvas {
         bottom: 0;
-        margin-bottom: 1px;
-        margin-left: 10px;
-        align-self: center;
-        position: absolute;
+        position: fixed;
+        left: 50vw;
+        transform: translate(-50%,-5vh);
 }
 
-.textcount {
-        position: absolute;
-        bottom: 0;
-        margin-left: 40%;
-        margin-bottom: 140px;
-        background-color: azure;
-
-}
 
 
 footer {
-        position: fixedx;
+        position: fixed;
         text-align: center;
         align-self: auto;
         bottom: 0;
-        width: 100%;
-        height: 8%;
-        font-size: 100px;
-        color: aliceblue;
+        width: 100vw;
+        height: 40hw;
+        font-size: 20px;
+        color: rgb(13, 59, 99);
+        background-color: #ff0a54;
+}
+
+
+
+.quran-container {
+    position: absolute;
+    width: 70vw;
+    font-family: Amiri;
+    font-size: 1rem;
+    text-align: center;
+    color: rgb(255, 255, 255);
+   left: 50vw;
+   transform: translate(-50%,20vh);
+
+}
+.name-of-god {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.octagon {
+    overflow: hidden;
+}
+.octagon .inner {
+    background: radial-gradient(circle, #111dca4f 15%, rgb(10, 232, 36) 100%);
+    transform: rotate(45deg);
+    width: 30px;
+    height: 30px;
+}
+.meaning {
+    visibility: hidden;
+    position: absolute;
+    font-size: 16px;
+    max-width: 180px;
+    left: 30%;
+    bottom: 1%;
+    background: rgb(22, 121, 149);
+    padding: 5px;
+    border-radius: 10px;
+    opacity: 0;
+    transition: all 0.5s;
+}
+.quran-content .sign:hover .meaning {
+    visibility: visible;
+    opacity: 100%;
+    transition: all 0.5s;
+    text-align: center;
+
 }
