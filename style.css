@@ -131,20 +131,16 @@
         bottom: 0;
         z-index: -1;
         }
-#text {
-        height: 10%;
-        width: 100%;
-        font-size:10vw;
-        text-shadow: 2px 3px 1px rgb(255, 255, 255), 0 0 2em rgb(253, 253, 253), 0 0 2em rgb(255, 11, 11);
+.text {
+        height: 10vh;
+        width: 100vw;
+        font-size: clamp(4vh, 5vh, 15vh);
+        text-shadow: 2px 3px 1px rgb(255, 255, 255), 0 0 2em rgb(253, 253, 253), 0 0 2em rgb(175, 132, 132);
         font-family:"kufi", 'kufi', 'kufi', 'kufi';
-        color: #5d0b0b;
-        -moz-box-shadow:none;  
-        -webkit-box-shadow: none;  
-        box-shadow:none;  
+        color: #2a86d1;
         text-align:center;
-        position: fixed;
-        top: 5%;
-
+        align-items: center;
+        background-color: #16b0da;
 
 }
 
@@ -173,16 +169,17 @@ footer {
 
 .quran-container {
     position: absolute;
-    width: 80vw;
+    width: clamp(300px,50%,400px);
     font-family: Amiri;
     font-size: 1.4rem;
     text-align: center;
     color: rgb(255, 255, 255);
-   left: 50vw;
-   transform: translate(-50%,20vh);
-   background-image: url(https://c0.wallpaperflare.com/preview/196/594/379/quran-book.jpg);
-   background-size: cover;
-   border-radius: 12%;
+    left: 50vw;
+    transform: translate(-50%,20vh);
+    border-radius: 12%;
+    box-shadow: 1px 1px 50px #00c8ff;
+    background-color: #2a86d16e;
+   
 
 }
 .name-of-god {

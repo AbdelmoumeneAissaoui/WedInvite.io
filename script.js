@@ -23,7 +23,7 @@ var ringer = {
   //  s: 10,
   //    max: 100
   //  }
-   },
+  },
   r_count: 4,
   r_spacing: 18, // px
   r_size: 100, // px
@@ -38,7 +38,7 @@ var ringer = {
     $r = ringer;
 
     $r.cvs = document.createElement('canvas'); 
-    if (window.matchMedia("(min-width: 450px)").matches) {
+    if (window.matchMedia("(min-width: 520px)").matches) {
       $r.r_spacing = $r.r_spacing
       $r.r_size = $r.r_size
       $r.r_thickness = $r.r_thickness
@@ -109,7 +109,7 @@ var ringer = {
     $r.ctx.stroke();
    
     // second circle
-    $r.ctx.strokeStyle = "rgba(253, 128, 1, 0.9)";
+    $r.ctx.strokeStyle = "#16b0da";
     $r.ctx.beginPath();
     $r.ctx.arc(0,0,$r.r_size/2,0,endAngle, 1);
     $r.ctx.lineWidth =$r.r_thickness;
