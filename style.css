@@ -179,7 +179,6 @@ footer {
     border-radius: 12%;
     box-shadow: 1px 1px 50px #00c8ff;
     background-color: #2a86d16e;
-   
 
 }
 .name-of-god {
@@ -187,16 +186,19 @@ footer {
     margin: auto;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
     color: rgb(255, 255, 255);
 }
+
 
 .octagon {
     overflow: hidden;
 }
 .octagon .inner {
-    background: radial-gradient(circle, #111dca4f 15%, rgb(10, 232, 36) 100%);
-    transform: rotate(45deg);
+    #background: radial-gradient(circle, #111dca4f 15%, rgb(61, 114, 67) 100%);
+    #transform: rotate(45deg);
+    background: url("img/quran.png");
+    background-size: cover;
     width: 30px;
     height: 30px;
 }
