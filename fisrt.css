@@ -1,0 +1,204 @@
+@-webkit-keyframes bounce-top {
+  0% {
+    -webkit-transform: translateY(-45px);
+            transform: translateY(-45px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    opacity: 1;
+  }
+  24% {
+    opacity: 1;
+  }
+  40% {
+    -webkit-transform: translateY(-24px);
+            transform: translateY(-24px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  65% {
+    -webkit-transform: translateY(-12px);
+            transform: translateY(-12px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  82% {
+    -webkit-transform: translateY(-6px);
+            transform: translateY(-6px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  93% {
+    -webkit-transform: translateY(-4px);
+            transform: translateY(-4px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  25%,
+  55%,
+  75%,
+  87% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    opacity: 1;
+  }
+}
+@keyframes bounce-top {
+  0% {
+    -webkit-transform: translateY(-45px);
+            transform: translateY(-45px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    opacity: 1;
+  }
+  24% {
+    opacity: 1;
+  }
+  40% {
+    -webkit-transform: translateY(-24px);
+            transform: translateY(-24px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  65% {
+    -webkit-transform: translateY(-12px);
+            transform: translateY(-12px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  82% {
+    -webkit-transform: translateY(-6px);
+            transform: translateY(-6px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  93% {
+    -webkit-transform: translateY(-4px);
+            transform: translateY(-4px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  25%,
+  55%,
+  75%,
+  87% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes focus-in-contract-bck{0%{letter-spacing:1em;-webkit-transform:translateZ(300px);transform:translateZ(300px);-webkit-filter:blur(12px);filter:blur(12px);opacity:0}100%{-webkit-transform:translateZ(12px);transform:translateZ(12px);-webkit-filter:blur(0);filter:blur(0);opacity:1}}@keyframes focus-in-contract-bck{0%{letter-spacing:1em;-webkit-transform:translateZ(300px);transform:translateZ(300px);-webkit-filter:blur(12px);filter:blur(12px);opacity:0}100%{-webkit-transform:translateZ(12px);transform:translateZ(12px);-webkit-filter:blur(0);filter:blur(0);opacity:1}}
+@-webkit-keyframes focus-in-contract{0%{letter-spacing:1em;-webkit-filter:blur(12px);filter:blur(12px);opacity:0}100%{-webkit-filter:blur(0);filter:blur(0);opacity:1}}@keyframes focus-in-contract{0%{letter-spacing:1em;-webkit-filter:blur(12px);filter:blur(12px);opacity:0}100%{-webkit-filter:blur(0);filter:blur(0);opacity:1}}
+@-webkit-keyframes focus-in-expand-fwd{0%{letter-spacing:-.5em;-webkit-transform:translateZ(-800px);transform:translateZ(-800px);-webkit-filter:blur(12px);filter:blur(12px);opacity:0}100%{-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-filter:blur(0);filter:blur(0);opacity:1}}@keyframes focus-in-expand-fwd{0%{letter-spacing:-.5em;-webkit-transform:translateZ(-800px);transform:translateZ(-800px);-webkit-filter:blur(12px);filter:blur(12px);opacity:0}100%{-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-filter:blur(0);filter:blur(0);opacity:1}}
+@-webkit-keyframes focus-in-expand{0%{letter-spacing:-.5em;-webkit-filter:blur(12px);filter:blur(12px);opacity:0}100%{-webkit-filter:blur(0);filter:blur(0);opacity:1}}@keyframes focus-in-expand{0%{letter-spacing:-.5em;-webkit-filter:blur(12px);filter:blur(12px);opacity:0}100%{-webkit-filter:blur(0);filter:blur(0);opacity:1}}
+@-webkit-keyframes tracking-in-contract-bck{0%{letter-spacing:1em;-webkit-transform:translateZ(400px);transform:translateZ(400px);opacity:0}40%{opacity:.6}100%{-webkit-transform:translateZ(0);transform:translateZ(0);opacity:1}}@keyframes tracking-in-contract-bck{0%{letter-spacing:1em;-webkit-transform:translateZ(400px);transform:translateZ(400px);opacity:0}40%{opacity:.6}100%{-webkit-transform:translateZ(0);transform:translateZ(0);opacity:1}}
+@-webkit-keyframes text-pop-up-top{0%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-transform-origin:50% 50%;transform-origin:50% 50%;text-shadow:none}100%{-webkit-transform:translateY(-50px);transform:translateY(-50px);-webkit-transform-origin:50% 50%;transform-origin:50% 50%;text-shadow:0 1px 0 #ccc,0 2px 0 #ccc,0 3px 0 #ccc,0 4px 0 #ccc,0 5px 0 #ccc,0 6px 0 #ccc,0 7px 0 #ccc,0 8px 0 #ccc,0 9px 0 #ccc,0 50px 30px rgba(0,0,0,.3)}}@keyframes text-pop-up-top{0%{-webkit-transform:translateY(0);transform:translateY(0);-webkit-transform-origin:50% 50%;transform-origin:50% 50%;text-shadow:none}100%{-webkit-transform:translateY(-50px);transform:translateY(-50px);-webkit-transform-origin:50% 50%;transform-origin:50% 50%;text-shadow:0 1px 0 #ccc,0 2px 0 #ccc,0 3px 0 #ccc,0 4px 0 #ccc,0 5px 0 #ccc,0 6px 0 #ccc,0 7px 0 #ccc,0 8px 0 #ccc,0 9px 0 #ccc,0 50px 30px rgba(0,0,0,.3)}}
+@-webkit-keyframes text-shadow-pop-tl{0%{text-shadow:0 0 #555,0 0 #555,0 0 #555,0 0 #555,0 0 #555,0 0 #555,0 0 #555,0 0 #555;-webkit-transform:translateX(0) translateY(0);transform:translateX(0) translateY(0)}100%{text-shadow:-1px -1px #555,-2px -2px #555,-3px -3px #555,-4px -4px #555,-5px -5px #555,-6px -6px #555,-7px -7px #555,-8px -8px #555;-webkit-transform:translateX(8px) translateY(8px);transform:translateX(8px) translateY(8px)}}@keyframes text-shadow-pop-tl{0%{text-shadow:0 0 #555,0 0 #555,0 0 #555,0 0 #555,0 0 #555,0 0 #555,0 0 #555,0 0 #555;-webkit-transform:translateX(0) translateY(0);transform:translateX(0) translateY(0)}100%{text-shadow:-1px -1px #555,-2px -2px #555,-3px -3px #555,-4px -4px #555,-5px -5px #555,-6px -6px #555,-7px -7px #555,-8px -8px #555;-webkit-transform:translateX(8px) translateY(8px);transform:translateX(8px) translateY(8px)}}
+@-webkit-keyframes text-shadow-pop-bl{0%{text-shadow:0 0 #555,0 0 #555,0 0 #555,0 0 #555,0 0 #555,0 0 #555,0 0 #555,0 0 #555;-webkit-transform:translateX(0) translateY(0);transform:translateX(0) translateY(0)}100%{text-shadow:-1px 1px #555,-2px 2px #555,-3px 3px #555,-4px 4px #555,-5px 5px #555,-6px 6px #555,-7px 7px #555,-8px 8px #555;-webkit-transform:translateX(8px) translateY(-8px);transform:translateX(8px) translateY(-8px)}}@keyframes text-shadow-pop-bl{0%{text-shadow:0 0 #555,0 0 #555,0 0 #555,0 0 #555,0 0 #555,0 0 #555,0 0 #555,0 0 #555;-webkit-transform:translateX(0) translateY(0);transform:translateX(0) translateY(0)}100%{text-shadow:-1px 1px #555,-2px 2px #555,-3px 3px #555,-4px 4px #555,-5px 5px #555,-6px 6px #555,-7px 7px #555,-8px 8px #555;-webkit-transform:translateX(8px) translateY(-8px);transform:translateX(8px) translateY(-8px)}}
+@-webkit-keyframes text-shadow-pop-br{0%{text-shadow:0 0 #555,0 0 #555,0 0 #555,0 0 #555,0 0 #555,0 0 #555,0 0 #555,0 0 #555;-webkit-transform:translateX(0) translateY(0);transform:translateX(0) translateY(0)}100%{text-shadow:1px 1px #555,2px 2px #555,3px 3px #555,4px 4px #555,5px 5px #555,6px 6px #555,7px 7px #555,8px 8px #555;-webkit-transform:translateX(-8px) translateY(-8px);transform:translateX(-8px) translateY(-8px)}}@keyframes text-shadow-pop-br{0%{text-shadow:0 0 #555,0 0 #555,0 0 #555,0 0 #555,0 0 #555,0 0 #555,0 0 #555,0 0 #555;-webkit-transform:translateX(0) translateY(0);transform:translateX(0) translateY(0)}100%{text-shadow:1px 1px #555,2px 2px #555,3px 3px #555,4px 4px #555,5px 5px #555,6px 6px #555,7px 7px #555,8px 8px #555;-webkit-transform:translateX(-8px) translateY(-8px);transform:translateX(-8px) translateY(-8px)}}
+
+@import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
+@import url('https://fonts.googleapis.com/css2?family=Amiri&display=swap');
+
+
+
+
+
+#background-video {
+        height: 100vb;
+        width: 100vw;
+        object-fit: cover;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        z-index: -1;
+        }
+.text {
+        height: 10vh;
+        width: 100vw;
+        font-size: clamp(4vh, 5vh, 15vh);
+        text-shadow: 2px 3px 1px rgb(255, 255, 255), 0 0 2em rgb(253, 253, 253), 0 0 2em rgb(175, 132, 132);
+        font-family:"kufi", 'kufi', 'kufi', 'kufi';
+        color: #2a86d1;
+        text-align:center;
+        align-items: center;
+        background-color: #16b0da;
+
+}
+
+canvas {
+        bottom: 0;
+        position: fixed;
+        left: 50vw;
+        transform: translate(-50%,-5vh);
+}
+
+
+
+footer {
+        position: fixed;
+        text-align: center;
+        align-self: auto;
+        bottom: 0;
+        width: 100vw;
+        height: 40hw;
+        font-size: 20px;
+        color: rgb(13, 59, 99);
+        background-color: #ff0a54;
+}
+
+
+
+.quran-container {
+    position: absolute;
+    width: clamp(300px,50%,400px);
+    font-family: Amiri;
+    font-size: 1.4rem;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    left: 50vw;
+    transform: translate(-50%,20vh);
+    border-radius: 12%;
+    box-shadow: 1px 1px 50px #00c8ff;
+    background-color: #2a86d16e;
+
+}
+.name-of-god {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: rgb(255, 255, 255);
+}
+
+
+.octagon {
+    overflow: hidden;
+}
+.octagon .inner {
+    #background: radial-gradient(circle, #111dca4f 15%, rgb(61, 114, 67) 100%);
+    #transform: rotate(45deg);
+    background: url("img/quran.png");
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+}

@@ -112,14 +112,14 @@ var ringer = {
     $r.ctx.stroke();
    
     // second circle
-    $r.ctx.strokeStyle = "#00C6FF";
+    $r.ctx.strokeStyle = "#311D3F";
     $r.ctx.beginPath();
     $r.ctx.arc(0,0,$r.r_size/2,0,endAngle, 1);
     $r.ctx.lineWidth =$r.r_thickness;
     $r.ctx.stroke();
     
     // label
-    $r.ctx.fillStyle = "#00C6FF";
+    $r.ctx.fillStyle = "#311D3F";
    
     $r.ctx.font = $r.r_font1+'px Helvetica';
     $r.ctx.fillText(label, 0, $r.r_warp);
