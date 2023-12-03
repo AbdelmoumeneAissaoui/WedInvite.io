@@ -17,7 +17,7 @@
       opacity: 1;
     }
   }
-  @keyframes heart {
+@keyframes heart {
     0% {
         transform: scale(2);
     }
@@ -190,6 +190,7 @@
     --thiB:#CCC8AA;
     --forB:#F1EFEF;
 }
+
 h1, h2 {
     margin-block-start: 0px;
     margin-block-end: 0px;
@@ -214,12 +215,10 @@ h1, h2 {
     transform: translateX(-50%);
     text-align: center;
     align-items: center;
-    #background-color: var(--sec);
-    text-shadow: 3px 3px 7px var(--firB),-3px -3px 7px var(--firB);
     #text-shadow: 2px 3px 10px rgb(255, 255, 255), 0 0 2em rgb(253, 253, 253), 0 0 2em rgb(0, 0, 0);
     border-radius: 50px 10px 50px 10px;
-    box-shadow: 20px 7px 20px rgb(99, 119, 193),-20px -7px 20px rgb(99, 119, 193);
-    background-color: #00c8ffab;
+    #box-shadow: 20px 7px 20px rgb(99, 119, 193),-20px -7px 20px rgb(99, 119, 193);
+    #background-color: #00c8ffab;
 
 }
 
@@ -234,51 +233,75 @@ h1, h2 {
 }
 
 .main {
-    position: relative;
-    margin-top: 15px;
-    width: 96vw;
-    height: 60vh;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    grid-column-gap: 30px;
-    grid-row-gap: 30px;
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    align-content:center;
 }
 
 .maps {
-    grid-area: 1 / 1 / 6 / 3;
-    text-align: center;
-    justify-items: center;
-    margin: 10px 10px 10px 10px;
-    box-shadow: 20px 7px 20px rgb(99, 119, 193),-20px -7px 20px rgb(99, 119, 193),-20px -7px 20px rgb(99, 119, 193);
-    border-radius: 50px 0px 50px 20px;
-}
-.text {
-    grid-area: 1 / 3 / 2 / 7;
-    text-align: center;
-    justify-items: center;
-    margin: 10px 10px 10px 10px;
-    box-shadow: 20px 7px 20px rgb(99, 119, 193),-20px -7px 20px rgb(99, 119, 193);
-    border-radius: 50px 0px 50px 20px;
-}
-.calander {
-    grid-area: 2 / 3 / 6 / 5;
-    width: 300px;
+    order: 3;
+    width: 40%;
     height: 440px;
     text-align: center;
     justify-items: center;
-    margin: 10px 10px 10px 10px;
-    box-shadow: 20px 7px 20px rgb(99, 119, 193),-20px -7px 20px rgb(99, 119, 193);
+    margin: 10px 20px 150px 20px;
+    #box-shadow: 20px 7px 20px rgb(99, 119, 193),-20px -7px 20px rgb(99, 119, 193);
     border-radius: 50px 0px 50px 20px;
+
 }
-.contact {
-    grid-area: 2 / 5 / 6 / 7;
+.map {
+    width: 100%;
+    height: 440px;
     text-align: center;
     justify-items: center;
-    margin: 10px 10px 10px 10px;
     box-shadow: 20px 7px 20px rgb(99, 119, 193),-20px -7px 20px rgb(99, 119, 193);
     border-radius: 50px 0px 50px 20px;
-    background-color: #00c8ff5a;
+
+}
+
+.text {
+    order: 1;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    justify-items: center;
+    margin: 10px 20px 10px 20px;
+    box-shadow: 20px 7px 20px rgb(99, 119, 193),-20px -7px 20px rgb(99, 119, 193);
+    border-radius: 50px 0px 50px 20px;
+
+}
+.text_end {
+    order: 3;
+    width: 100%;
+    text-align: center;
+    justify-items: center;
+    margin: 10px 20px 150px 20px;
+    #box-shadow: 20px 7px 20px rgb(99, 119, 193),-20px -7px 20px rgb(99, 119, 193);
+    #border-radius: 50px 0px 50px 20px;
+
+}
+
+.calander {
+    order: 1;
+    height: 440px;
+    text-align: center;
+    justify-items: center;
+    margin: 10px 20px 10px 20px;
+    box-shadow: 20px 7px 20px rgb(99, 119, 193),-20px -7px 20px rgb(99, 119, 193);
+    border-radius: 50px 0px 50px 20px;
+
+}
+.QURAN {
+    order: 0;
+    width: 100%;
+    text-align: center;
+    justify-items: center;
+    margin: 20px 10px 20px 10px;
+    #box-shadow: 20px 7px 20px rgb(99, 119, 193),-20px -7px 20px rgb(99, 119, 193);
+    border-radius: 50px 0px 50px 20px;
+    #background-color: #00c8ff5a;
+
 
 }
 
@@ -289,6 +312,8 @@ canvas {
     text-shadow: 2px 3px 10px rgb(255, 255, 255), 0 0 2em rgb(253, 253, 253), 0 0 2em rgb(0, 0, 0);
     transform: translate(-50%,-3vh);
     font-size: 20px;
+    box-shadow: 20px 7px 20px rgb(99, 119, 193),-20px -7px 20px rgb(99, 119, 193);
+    border-radius: 50px 0px 50px 20px;
 }
 
 
@@ -298,7 +323,7 @@ canvas {
     left: 50%;
     transform: translateX(-50%);
     #background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);    box-shadow: 15px 15px 20px rgba(166, 67, 67, 0.5);
-    border-radius: 50px 10px 50px 10px;
+    border-radius: 50px 0px 50px 20px;
     overflow: hidden;
 }
 .calendar__picture {
@@ -378,10 +403,18 @@ canvas {
 .quran-container {
     position: relative;
     font-family: Amiri;
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     text-align: center;
     color: rgb(255, 255, 255);
 }
+.wishes {
+    position: relative;
+    font-family: Amiri;
+    font-size: 4rem;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
 .name-of-god {
     display: flex;
     margin: auto;
@@ -396,8 +429,6 @@ canvas {
     overflow: hidden;
 }
 .octagon .inner {
-    #background: radial-gradient(circle, #111dca4f 15%, rgb(61, 114, 67) 100%);
-    #transform: rotate(45deg);
     background: url("img/quran.png");
     background-size: cover;
     width: 30px;
@@ -421,11 +452,8 @@ canvas {
     display: flex;
     justify-content: space-around;
     text-align:center;
-    color: var(--for);
+    color: var(--secB);
 }
-
-/* ###################### responsive ######################*/
-
 @media only screen and (max-width: 800px) {
 
     .main {
@@ -456,6 +484,18 @@ canvas {
         border-radius: 50px 0px 50px 20px;
     
     }
+    .text_end {
+        order: 3;
+        width: 100%;
+        text-align: center;
+        justify-items: center;
+        margin: 10px 20px 100px 20px;
+        box-shadow: 20px 7px 20px rgb(99, 119, 193),-20px -7px 20px rgb(99, 119, 193);
+        border-radius: 50px 0px 50px 20px;
+    
+    }
+    
+    
     .calander {
         order: 1;
         width: 300px;
@@ -479,6 +519,11 @@ canvas {
 
     
     }
+    .wishes {
+        font-size: 1.8rem;
+    }
+    
+    
     
     
 }

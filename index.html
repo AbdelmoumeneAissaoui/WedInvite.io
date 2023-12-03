@@ -13,7 +13,7 @@
 <body>
     <!-- BackGround VIDEO -->
     <video class="bg-video" autoplay loop muted>
-        <source src="Videos/bg_video.mp4">
+       <source src="Videos/test.mp4.mp4">
     </video>
 
     <!-- HEADER and TITLE-->
@@ -30,7 +30,7 @@
     </div>
     <div class="main">
         <div class="maps" data-aos="zoom-out-right" data-aos-anchor-placement="top-center">
-            <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3219.999948013528!2d5.407848976248659!3d36.19088310180883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12f315995b02703f%3A0x104b35de6f73cfec!2sCentre%20Commercial%20%26%20de%20Loisirs%20Park%20Mall!5e0!3m2!1sfr!2sfr!4v1698688278788!5m2!1sfr!2sfr"></iframe>
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2277.5387738162262!2d5.317164223235889!3d36.16834989973615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12f33f805a44a1d1%3A0xca6bddcfc87cc7fc!2z4oCP2YLYp9i52Kkg2KfZhNij2YHYsdin2K0g2KfZiNi02YYg2LPYt9mK2YE!5e0!3m2!1sfr!2sfr!4v1701264930175!5m2!1sfr!2sfr"></iframe>
         </div>
         <div class="text" data-aos="zoom-out-right" data-aos-anchor-placement="top-center">
             text
@@ -86,7 +86,7 @@
                 </div>
               </div>
         </div>
-        <div class="contact" data-aos="zoom-out-right" data-aos-anchor-placement="center-center">
+        <div class="QURAN" data-aos="zoom-out-right" data-aos-anchor-placement="center-center">
             <div id="section1" class="quran-container">
                 <div class="quran-content">
                     <div class="name-of-god">
@@ -112,6 +112,10 @@
                   </div>
               </div>
         </div>
+        <div class="text_end">
+            <div class="wishes">بارك الله لهما وبارك عليهما وجمع بينهما في الخير</div>
+        </div>
+
     </div>
 
     <footer class="designer">
@@ -128,6 +132,11 @@
     <script  src="script.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
+        function pageScroll() {
+            window.scrollBy(0,1);
+            scrolldelay = setTimeout(pageScroll,20);
+        }
+        //pageScroll();
         AOS.init();
     </script>
 </body>
