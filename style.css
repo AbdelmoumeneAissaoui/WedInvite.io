@@ -241,18 +241,18 @@ h1, h2 {
 
 .maps {
     order: 3;
-    width: 40%;
-    height: 440px;
+    width: 60%;
+    height: 480px;
     text-align: center;
     justify-items: center;
-    margin: 10px 20px 150px 20px;
-    #box-shadow: 20px 7px 20px rgb(99, 119, 193),-20px -7px 20px rgb(99, 119, 193);
+    margin: 10px 20px 10px 20px;
+    box-shadow: 20px 7px 20px rgb(99, 119, 193),-20px -7px 20px rgb(99, 119, 193);
     border-radius: 50px 0px 50px 20px;
 
 }
 .map {
     width: 100%;
-    height: 440px;
+    height: 100%;
     text-align: center;
     justify-items: center;
     box-shadow: 20px 7px 20px rgb(99, 119, 193),-20px -7px 20px rgb(99, 119, 193);
@@ -272,23 +272,22 @@ h1, h2 {
 
 }
 .text_end {
-    order: 3;
+    order: 4;
     width: 100%;
     text-align: center;
     justify-items: center;
     margin: 10px 20px 150px 20px;
-    #box-shadow: 20px 7px 20px rgb(99, 119, 193),-20px -7px 20px rgb(99, 119, 193);
-    #border-radius: 50px 0px 50px 20px;
+    box-shadow: 20px 7px 20px rgb(99, 119, 193),-20px -7px 20px rgb(99, 119, 193);
+    border-radius: 50px 0px 50px 20px;
 
 }
 
 .calander {
     order: 1;
-    height: 440px;
     text-align: center;
     justify-items: center;
     margin: 10px 20px 10px 20px;
-    box-shadow: 20px 7px 20px rgb(99, 119, 193),-20px -7px 20px rgb(99, 119, 193);
+    #box-shadow: 20px 7px 20px rgb(99, 119, 193),-20px -7px 20px rgb(99, 119, 193);
     border-radius: 50px 0px 50px 20px;
 
 }
@@ -298,7 +297,7 @@ h1, h2 {
     text-align: center;
     justify-items: center;
     margin: 20px 10px 20px 10px;
-    #box-shadow: 20px 7px 20px rgb(99, 119, 193),-20px -7px 20px rgb(99, 119, 193);
+    box-shadow: 20px 7px 20px rgb(99, 119, 193),-20px -7px 20px rgb(99, 119, 193);
     border-radius: 50px 0px 50px 20px;
     #background-color: #00c8ff5a;
 
@@ -312,23 +311,24 @@ canvas {
     text-shadow: 2px 3px 10px rgb(255, 255, 255), 0 0 2em rgb(253, 253, 253), 0 0 2em rgb(0, 0, 0);
     transform: translate(-50%,-3vh);
     font-size: 20px;
-    box-shadow: 20px 7px 20px rgb(99, 119, 193),-20px -7px 20px rgb(99, 119, 193);
-    border-radius: 50px 0px 50px 20px;
 }
 
 
 .calendar {
     position: relative;
-    width: 300px;
+    display: flex;
     left: 50%;
     transform: translateX(-50%);
-    #background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);    box-shadow: 15px 15px 20px rgba(166, 67, 67, 0.5);
+    box-shadow: 20px 7px 20px rgb(99, 119, 193),-20px -7px 20px rgb(99, 119, 193);
     border-radius: 50px 0px 50px 20px;
     overflow: hidden;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 .calendar__picture {
     position: relative;
-    height: 200px;
+    width: 300px;
+    height: 240px;
     padding: 20px;
     color: #fff;
     background: #262626 url("https://c1.wallpaperflare.com/preview/486/968/45/people-wedding.jpg") no-repeat center / cover;
@@ -336,6 +336,7 @@ canvas {
     text-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
     box-sizing: border-box;
     background-size: cover;
+    border-radius: 50px 0px 0px 0px;
 }
 .calendar__picture::before {
     content: "";
@@ -359,12 +360,15 @@ canvas {
     color: #C52F31;
 }
 .calendar__date {
+    width: 300px;
+    height: 240px;
     padding: 20px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25px, 1fr));
     grid-gap: 10px;
     box-sizing: border-box;
     background-color: #00c8ff5a;
+    border-radius: 0px 0px 50px 20px;
 }
 .calendar__day {
     display: flex;
@@ -410,7 +414,7 @@ canvas {
 .wishes {
     position: relative;
     font-family: Amiri;
-    font-size: 4rem;
+    font-size: 5vw;
     text-align: center;
     color: rgb(255, 255, 255);
 }
@@ -454,6 +458,39 @@ canvas {
     text-align:center;
     color: var(--secB);
 }
+
+.contact {
+    order: 3;
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    font-family: Amiri;
+    font-size: 4vw;
+    margin: 10px 20px 10px 20px;
+    box-shadow: 20px 7px 20px rgb(99, 119, 193),-20px -7px 20px rgb(99, 119, 193);
+    border-radius: 50px 0px 50px 20px;
+    flex-wrap: wrap;
+
+}
+
+.contact * {
+    text-align: right;
+    color: rgb(255, 255, 255);
+    margin-right: 36px;
+}
+.person1 {
+    margin-right: 0px;
+}
+
+.fas {
+    color: var(--sec);
+}
+
+.far {
+    color: var(--sec);
+}
+
+
 @media only screen and (max-width: 800px) {
 
     .main {
@@ -464,7 +501,7 @@ canvas {
     }
     .maps {
         order: 2;
-        width: 300px;
+        width: 90%;
         height: 440px;
         text-align: center;
         justify-items: center;
@@ -473,6 +510,7 @@ canvas {
         border-radius: 50px 0px 50px 20px;
     
     }
+/*
     .text {
         order: 3;
         width: 300px;
@@ -484,48 +522,51 @@ canvas {
         border-radius: 50px 0px 50px 20px;
     
     }
+*/
     .text_end {
-        order: 3;
-        width: 100%;
+        order: 4;
+        width: 90%;
         text-align: center;
         justify-items: center;
         margin: 10px 20px 100px 20px;
         box-shadow: 20px 7px 20px rgb(99, 119, 193),-20px -7px 20px rgb(99, 119, 193);
         border-radius: 50px 0px 50px 20px;
-    
     }
     
     
+    .calendar {
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        box-shadow: transparent;
+    }
     .calander {
         order: 1;
-        width: 300px;
-        height: 440px;
-        text-align: center;
-        justify-items: center;
-        margin: 10px 10px 10px 10px;
-        box-shadow: 20px 7px 20px rgb(99, 119, 193),-20px -7px 20px rgb(99, 119, 193);
+        margin: 10px 20px 10px 20px;
+        box-shadow: transparent;
         border-radius: 50px 0px 50px 20px;
     
     }
-    .contact {
-        order: 0;
-        width: 300px;
-        text-align: center;
-        justify-items: center;
-        margin: 10px 10px 10px 10px;
-        box-shadow: 20px 7px 20px rgb(99, 119, 193),-20px -7px 20px rgb(99, 119, 193);
-        border-radius: 50px 0px 50px 20px;
-        background-color: #00c8ff5a;
 
-    
-    }
-    .wishes {
-        font-size: 1.8rem;
-    }
-    
-    
-    
-    
+
 }
 
+
+@media only screen and (max-width: 672px) {
+    .calendar {
+        width: 300px;
+    }
+    .maps {
+        width: 450px;
+    }
+    .text {
+        width: 450px;
+    }
+    .QURAN {
+        width: 450px;
+    }
+    .text_end {
+        width: 450px;
+    }
+}
 /* ###################### responsive ######################*/

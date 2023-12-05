@@ -39,7 +39,7 @@ var ringer = {
     $r = ringer;
 
     $r.cvs = document.createElement('canvas'); 
-    if (window.matchMedia("(min-width: 520px)").matches) {
+    if (window.matchMedia("(min-width: 800px)").matches) {
       $r.r_spacing = $r.r_spacing
       $r.r_size = $r.r_size
       $r.r_thickness = $r.r_thickness
