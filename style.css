@@ -271,16 +271,6 @@ h1, h2 {
     border-radius: 50px 0px 50px 20px;
 
 }
-.text_end {
-    order: 4;
-    width: 100%;
-    text-align: center;
-    justify-items: center;
-    margin: 10px 20px 150px 20px;
-    box-shadow: 20px 7px 20px rgb(99, 119, 193),-20px -7px 20px rgb(99, 119, 193);
-    border-radius: 50px 0px 50px 20px;
-
-}
 
 .calander {
     order: 1;
@@ -411,13 +401,6 @@ canvas {
     text-align: center;
     color: rgb(255, 255, 255);
 }
-.wishes {
-    position: relative;
-    font-family: Amiri;
-    font-size: 5vw;
-    text-align: center;
-    color: rgb(255, 255, 255);
-}
 
 .name-of-god {
     display: flex;
@@ -459,28 +442,57 @@ canvas {
     color: var(--secB);
 }
 
-.contact {
-    order: 3;
-    display: flex;
-    flex-direction: row-reverse;
-    width: 100%;
-    font-family: Amiri;
-    font-size: 4vw;
-    margin: 10px 20px 10px 20px;
+.text_end {
+    order: 4;
+    width: 70%;
+    text-align: center;
+    justify-items: center;
+    margin: 10px 20px 150px 20px;
     box-shadow: 20px 7px 20px rgb(99, 119, 193),-20px -7px 20px rgb(99, 119, 193);
     border-radius: 50px 0px 50px 20px;
-    flex-wrap: wrap;
 
 }
 
-.contact * {
+.wishes {
+    position: relative;
+    font-family: Amiri;
+    font-size: 1.8rem;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+
+.contact {
+    order: 3;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    font-family: Amiri;
+    font-size: 1.8rem;
+    margin: 10px 20px 10px 20px;
+    box-shadow: 20px 7px 20px rgb(99, 119, 193),-20px -7px 20px rgb(99, 119, 193);
+    border-radius: 50px 0px 50px 20px;
+    flex-wrap: no-wrap;
+
+}
+
+.contact_titre {
     text-align: right;
     color: rgb(255, 255, 255);
     margin-right: 36px;
 }
 .person1 {
-    margin-right: 0px;
+    text-align: right;
+    color: rgb(255, 255, 255);
+    margin-right: 36px;
 }
+
+.person2 {
+    text-align: right;
+    color: rgb(255, 255, 255);
+    margin-right: 36px;
+}
+
 
 .fas {
     color: var(--sec);
@@ -490,6 +502,9 @@ canvas {
     color: var(--sec);
 }
 
+a {
+    color: white;
+}
 
 @media only screen and (max-width: 800px) {
 
@@ -546,6 +561,9 @@ canvas {
         box-shadow: transparent;
         border-radius: 50px 0px 50px 20px;
     
+    }
+    .contact {
+        width: 90%;
     }
 
 
