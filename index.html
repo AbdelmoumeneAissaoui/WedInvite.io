@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html dir="rtl" lang="ar">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -33,14 +33,16 @@
             <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2277.5387738162262!2d5.317164223235889!3d36.16834989973615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12f33f805a44a1d1%3A0xca6bddcfc87cc7fc!2z4oCP2YLYp9i52Kkg2KfZhNij2YHYsdin2K0g2KfZiNi02YYg2LPYt9mK2YE!5e0!3m2!1sfr!2sfr!4v1701264930175!5m2!1sfr!2sfr"></iframe>
         </div>
         <div class="text" data-aos="zoom-in" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
-            text
+            <div class="text_invit">
+                <span class="word"> تتشرف </span><span class="word"> عائلة </span><span class="word"> عيساوي </span><span class="word"> بدعوتكم </span><span class="word"> لحضور </span><span class="word"> مأدبة </span><span class="word"> غداء </span><span class="word"> بمناسبة </span><span class="word"> حفل </span><span class="word"> زفاف </span><span class="word"> إبنهم </span><span class="word"> عبدالمؤمن </span><span class="word"> و </span><span class="word"> ذلك </span><span class="word"> بمشيئة </span><span class="word"> الله </span><span class="word"> يوم </span><span class="word"> السبت </span><span class="word"> 17 </span><span class="word"> فيفري </span><span class="word"> 2024 </span><span class="word"> بقاعة </span><span class="word"> الأفراح </span><span class="word"> أوشن </span><span class="word"> ابتداءا </span><span class="word"> من </span><span class="word"> الساعة </span><span class="word"> 11 </span><span class="word"> صباحا </span>            </div>
+            <!-- <div class="text_invit"><span class="word">تتشرف عائلة </span><span class="word_Fname">عيساوي</span><span class="word"> بدعوتكم لحضور مأدبة غداء بمناسبة حفل زفاف إبنهم </span><span class="word_Lname">عبدالمؤمن</span><span class="word"> و ذلك بمشيئة الله يوم </span><span class="word_day">السبت 17 فيفري 2024</span><span class="word"> بقاعة الأفراح </span><span class="word_place">أوشن</span><span class="word"> ابتداءا من الساعة </span><span class="word_time">11 صباحا</span></div> -->
         </div>
         <div class="calander" data-aos="zoom-in" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
             <div class="calendar">
                 <div class="calendar__picture">
                   <h2>السبت 17</h2>
                   <h2>فيفري 2024</h2>
-                  <!-- <h3>فيفري 2023</h3> !-->
+                  <h3>ابتداءا من الساعة 11 صباحا</h3>
                 </div>
                 <div class="calendar__date">
                   <div class="calendar__day">M</div>
@@ -146,6 +148,7 @@
     </footer>
     <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <script  src="script.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://kit.fontawesome.com/990c150116.js" crossorigin="anonymous"></script>    <script>
@@ -155,6 +158,22 @@
         }
         //pageScroll();
         AOS.init();
+        anime.timeline({loop: true})
+        .add({
+            targets: '.text_invit .word',
+            scale: [14,1],
+            opacity: [0,1],
+            easing: "easeOutCirc",
+            duration: 10000,
+            easing: "easeOutExpo",
+            delay: (el, i) => 500 * i,
+        }).add({
+            targets: '.text_invit',
+            opacity: 0,
+            duration: 1000,
+            easing: "easeOutCirc",
+            delay: 100
+        });
     </script>
 </body>
 
