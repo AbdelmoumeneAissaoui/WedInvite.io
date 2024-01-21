@@ -387,7 +387,7 @@ canvas {
 }
 .calendar__number {
     display: flex;
-    align-items: center;
+    align-items:center;
     justify-content: center;
     height: 25px;
     color: #262626;
