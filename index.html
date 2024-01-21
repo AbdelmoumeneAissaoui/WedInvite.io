@@ -34,7 +34,8 @@
         </div>
         <div class="text" data-aos="zoom-in" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
             <div class="text_invit">
-                <span class="word"> تتشرف </span><span class="word"> عائلة </span><span class="word"> عيساوي </span><span class="word"> بدعوتكم </span><span class="word"> لحضور </span><span class="word"> مأدبة </span><span class="word"> غداء </span><span class="word"> بمناسبة </span><span class="word"> حفل </span><span class="word"> زفاف </span><span class="word"> إبنهم </span><span class="word"> عبدالمؤمن </span><span class="word"> و </span><span class="word"> ذلك </span><span class="word"> بمشيئة </span><span class="word"> الله </span><span class="word"> يوم </span><span class="word"> السبت </span><span class="word"> 17 </span><span class="word"> فيفري </span><span class="word"> 2024 </span><span class="word"> بقاعة </span><span class="word"> الأفراح </span><span class="word"> أوشن </span><span class="word"> ابتداءا </span><span class="word"> من </span><span class="word"> الساعة </span><span class="word"> 11 </span><span class="word"> صباحا </span>            </div>
+                <span class="word"> تتشرف </span><span class="word"> عائلة </span><span class="word" id="word_Special"> عيساوي </span><span class="word"> بدعوتكم </span><span class="word"> لحضور </span><span class="word"> مأدبة </span><span class="word"> غداء </span><span class="word"> بمناسبة </span><span class="word"> حفل </span><span class="word"> زفاف </span><span class="word"> إبنهم </span><span class="word" id="word_Special"> عبدالمؤمن </span><span class="word"> و </span><span class="word"> ذلك </span><span class="word"> بمشيئة </span><span class="word"> الله </span><span class="word"> يوم </span><span class="word"  id="word_Special"> السبت </span><span class="word" id="word_Special"> 17 </span><span class="word" id="word_Special"> فيفري </span><span class="word" id="word_Special"> 2024 </span><span class="word"> بقاعة </span><span class="word" id="word_Special"> الأفراح </span><span class="word" id="word_Special"> أوشن </span><span class="word"> ابتداءا </span><span class="word"> من </span><span class="word"> الساعة </span><span class="word" id="word_Special"> 11 </span><span class="word" id="word_Special"> صباحا </span>            
+            </div>
             <!-- <div class="text_invit"><span class="word">تتشرف عائلة </span><span class="word_Fname">عيساوي</span><span class="word"> بدعوتكم لحضور مأدبة غداء بمناسبة حفل زفاف إبنهم </span><span class="word_Lname">عبدالمؤمن</span><span class="word"> و ذلك بمشيئة الله يوم </span><span class="word_day">السبت 17 فيفري 2024</span><span class="word"> بقاعة الأفراح </span><span class="word_place">أوشن</span><span class="word"> ابتداءا من الساعة </span><span class="word_time">11 صباحا</span></div> -->
         </div>
         <div class="calander" data-aos="zoom-in" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
@@ -118,7 +119,9 @@
             </div>
         </div>
         <div class="text_end" data-aos="zoom-in" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
-            <div class="wishes">بارك الله لهما وبارك عليهما وجمع بينهما في الخير</div>
+            <div class="wishes">
+                <span class="doua"> بارك </span><span class="doua"> الله </span><span class="doua"> لهما </span><span class="doua"> وبارك </span><span class="doua"> عليهما </span><span class="doua"> وجمع </span><span class="doua"> بينهما </span><span class="doua"> في </span><span class="doua"> الخير </span>
+            </div>
         </div>
         <div class="contact" data-aos="zoom-in" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
             <div class="contact_titre">
@@ -169,6 +172,26 @@
             delay: (el, i) => 500 * i,
         }).add({
             targets: '.text_invit',
+            opacity: 0,
+            duration: 1000,
+            easing: "easeOutCirc",
+            delay: 100
+        });
+        anime.timeline({loop: true})
+        .add({
+            targets: '.wishes .doua',
+            translateY: ["1.1em", 0],
+            translateX: ["0.55em", 0],
+            translateZ: 0,
+            rotateZ: [180, 0],
+            opacity:[0,1],
+            scale: [10,1],
+            easing: "easeOutCirc",
+            duration: 1000,
+            easing: "easeOutExpo",
+            delay: (el, i) => 500 * i,
+        }).add({
+            targets: '.wishes',
             opacity: 0,
             duration: 1000,
             easing: "easeOutCirc",

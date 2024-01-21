@@ -286,6 +286,20 @@ h1, h2 {
     margin-left: 3px;
     margin-right: 3px;
   }
+#word_Special {
+    color: #1f58e8;
+    font-size: 3rem;
+    font-weight: 900;
+
+}
+
+.doua {
+    display:inline-table;
+    position:static;
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+
 
 
 .calander {
