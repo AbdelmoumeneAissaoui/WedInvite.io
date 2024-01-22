@@ -237,6 +237,7 @@ h1, h2 {
     justify-content:space-around;
     flex-wrap: wrap;
     align-content:center;
+    overflow: hidden;
 }
 
 .maps {
@@ -272,7 +273,6 @@ h1, h2 {
 }
 .text_invit {
     text-align: center;
-    overflow: hidden;
     color: white;
     font-size: 2rem;
     margin: 10px 10px 10px 10px;
@@ -541,6 +541,7 @@ a {
         justify-content: center;
         flex-wrap: wrap;
         align-content: start;
+        overflow: hidden;
     }
     .maps {
         order: 2;
