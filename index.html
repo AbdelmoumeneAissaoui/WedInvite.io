@@ -13,7 +13,7 @@
 <body>
     <!-- BackGround VIDEO -->
     <video class="bg-video" autoplay loop muted>
-       <source src="Videos/test.mp4.mp4">
+       <source src="Videos/rings.mp4">
     </video>
 
     <!-- HEADER and TITLE-->
@@ -125,14 +125,16 @@
         </div>
         <div class="contact" data-aos="zoom-in" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
             <div class="contact_titre">
-                  :أرقام في الخدمة  
                 <i class="far fa-address-card"></i>
+                  أرقام في الخدمة
             </div>
             <div class="person1">
-                علي  <a href="tel:+213770166907">0770166907</a>  <i class="fas fa-user-tie"></i>
+                <i class="fas fa-user-tie"></i>
+                علي  <a href="tel:+213770166907">0770166907</a>
             </div>
             <span class="person2">
-                منصف  <a href="tel:+213699794570">0699794570</a>  <i class="fas fa-user-tie"></i>
+                <i class="fas fa-user-tie"></i>
+                منصف  <a href="tel:+213699794570">0699794570</a>
             </span>
             </div>
         </div>
@@ -141,10 +143,12 @@
     </div>
 
     <footer class="designer">
-        <div class="name">Designed by <a href="https://www.linkedin.com/in/abdelmoumene-aissaoui-02a8a9a9/">Abdelmoumene AISSAOUI</a>
+        <div class="name">
             <a href="https://www.facebook.com/profile.php?id=100007984354334"><i class="fa fa-facebook-f"></i></a>
             <a href="https://www.linkedin.com/in/abdelmoumene-aissaoui-02a8a9a9/"><i class="fa fa-linkedin"></i></a>
             <a href="https://www.instagram.com/tarek.moumen/"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/abdelmoumene-aissaoui-02a8a9a9/" class="Linkedin">Abdelmoumene AISSAOUI</a>
+            Designed by 
         </div>
         </div>
     </footer>
@@ -164,18 +168,22 @@
         anime.timeline({loop: true})
         .add({
             targets: '.text_invit .word',
-            scale: [14,1],
-            opacity: [0,1],
+            translateY: ["1.1em", 0],
+            translateX: ["0.55em", 0],
+            translateZ: 0,
+            rotateZ: [180, 0],
+            opacity:[0,1],
+            scale: [15,1],
             easing: "easeOutCirc",
-            duration: 10000,
+            duration: 1000,
             easing: "easeOutExpo",
             delay: (el, i) => 500 * i,
         }).add({
             targets: '.text_invit',
             opacity: 0,
-            duration: 10000,
+            duration: 100,
             easing: "easeOutCirc",
-            delay: 1000
+            delay: 100
         });
         anime.timeline({loop: true})
         .add({
@@ -193,7 +201,7 @@
         }).add({
             targets: '.wishes',
             opacity: 0,
-            duration: 10000,
+            duration: 100,
             easing: "easeOutCirc",
             delay: 1000
         });
