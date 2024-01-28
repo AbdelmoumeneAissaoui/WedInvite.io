@@ -219,7 +219,7 @@
 :root {
 
     --fir:#1F58E8;
-    --sec:#ffffff;
+    --sec:#2fbaff;
     --thi:#C0FAFF;
     --for:#311D3F;
 
@@ -306,7 +306,7 @@ h1, h2 {
 }
 .text_invit {
     text-align: center;
-    color: white;
+    color: var(--sec);
     font-size: 2rem;
     margin: 10px 10px 10px 10px;
     font-family: 'Amiri';
@@ -499,7 +499,7 @@ canvas {
     display: flex;
     justify-content: space-around;
     text-align:center;
-    color: white;
+    color: var(--sec);
 }
 
 .Linkedin {
@@ -620,8 +620,10 @@ a {
         order: 1;
         margin: 10px 20px 10px 20px;
         box-shadow: transparent;
-        border-radius: 50px 0px 50px 20px;
     
+    }
+    .calendar__date {
+        border-radius: 0px 0px 0px 0px;
     }
     .contact {
         width: 90%;
