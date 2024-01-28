@@ -219,7 +219,7 @@
 :root {
 
     --fir:#1F58E8;
-    --sec:#2fbaff;
+    --sec:#ffffff;
     --thi:#C0FAFF;
     --for:#311D3F;
 
@@ -237,7 +237,7 @@ h1, h2 {
 .bg-video {
     width: 100vw;
     height: 100vh;
-    object-fit: cover;
+    object-fit:cover;
     position: fixed;
     top: 0;
     bottom: 0;
@@ -358,7 +358,7 @@ canvas {
     bottom: 0;
     position: fixed;
     left: 50vw;
-    text-shadow: 2px 3px 10px rgb(255, 255, 255), 0 0 2em rgb(253, 253, 253), 0 0 2em rgb(0, 0, 0);
+    text-shadow: 2px 3px 10px var(--sec), 0 0 2em rgb(253, 253, 253), 0 0 2em rgb(0, 0, 0);
     transform: translate(-50%,-3vh);
     font-size: 20px;
 }
@@ -460,7 +460,7 @@ canvas {
     font-family: 'Amiri';
     font-size: 1.8rem;
     text-align: center;
-    color: rgb(255, 255, 255);
+    color: var(--sec);
 }
 
 .name-of-god {
@@ -469,7 +469,7 @@ canvas {
     justify-content: center;
     align-items: center;
     gap: 10px;
-    color: rgb(255, 255, 255);
+    color: var(--sec);
 }
 
 
@@ -522,7 +522,7 @@ canvas {
     font-family: 'Amiri';
     font-size: 1.8rem;
     text-align: center;
-    color: rgb(255, 255, 255);
+    color: var(--sec);
 }
 
 
@@ -542,18 +542,18 @@ canvas {
 
 .contact_titre {
     text-align: right;
-    color: rgb(255, 255, 255);
+    color: var(--sec);
     margin-right: 36px;
 }
 .person1 {
     text-align: right;
-    color: rgb(255, 255, 255);
+    color: var(--sec);
     margin-right: 36px;
 }
 
 .person2 {
     text-align: right;
-    color: rgb(255, 255, 255);
+    color: var(--sec);
     margin-right: 36px;
 }
 
